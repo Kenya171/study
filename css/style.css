@@ -127,5 +127,12 @@ input[type="email"]{
     background-color: #ec6d64;
     display: block;
     margin: auto;
+}
+
+/* footer */
+footer{
+    background-color: #082b48;
+    color: #fff;
+    padding: 20px;
     
 }
