@@ -65,7 +65,6 @@ header{
     background-image: url(../img/main-vsual-nontitle.png);
     background-size: cover;
     padding: 80px;
-    
 }
 
 .top-title{
@@ -125,7 +124,7 @@ header{
     margin-bottom: 20px
 }
 
-input[type="email"]{
+input[type="email"] {
     width: 600px;
     border: 3px solid#d8d8d8;
     font-size: 18px;
@@ -135,7 +134,6 @@ input[type="email"]{
     border-radius: 999px;
     margin-bottom: 20px;
 }
-
 .btn{
     padding: 20px 60px;
     display: inline-block;
@@ -170,3 +168,93 @@ footer{
     font-size: 12px;
     float: right;
 }
+
+/* スマホ用の表示 */
+@media only screen and  (max-width:767px){
+
+    .clear::after{
+        content:none
+    }
+    /* header */
+    .header-left{
+        float: none;
+    }
+    
+    .header-title{
+        text-align: center;
+    }
+
+    .header-right{
+        float: none;
+    }
+    
+    .header-nav{
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    .header-nav-item{
+        float: none;
+        margin: 0;
+    }
+
+    /* top */
+    .top{
+        padding: 120px;
+    }
+    .top-title{
+        font-size: 32px;
+    }
+    .top-subtitle{
+        font-size: 14px;
+    }
+
+/* section共通クラス */
+  .section{
+    padding: 80px;
+    }   
+
+    .section-title{
+      font-size: 24px;
+       font-weight: bold;
+    }
+    .section p{
+        font-size: 14px;
+    }
+
+    /* about */
+    .about-left{
+        float: none;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .about-right{
+        float: none;
+        width: 100%;
+    }
+
+    /* course */
+    .course-wrapper{
+        flex-wrap: wrap;
+    }
+
+    .course-item{
+        width: 100%;
+        margin-bottom: 20px;   
+    }
+    
+    /* contact */
+    input[type="email"] {
+        width: 100%;
+    }
+
+    /* footter*/
+    .copyright{
+        font-size: 10px;
+        float: none;
+        text-align: center;
+    }
+}
+
+
+
